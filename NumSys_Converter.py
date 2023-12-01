@@ -12,7 +12,7 @@ hide_st_style = """
             footer {visibility: hidden;}
             </style>
             """
-#st.markdown(hide_st_style, unsafe_allow_html=True)
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 def convert_number(number, from_base, to_base):
