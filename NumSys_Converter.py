@@ -116,6 +116,8 @@ if number_to_convert is not None:
         if is_from_base(number_to_convert, from_base):
             code = convert(number_to_convert)
             st.code(code)
+            if "number" not in st.session_state:
+                st.session_state['number'] = number_to_convert
         else:
             st.error("Невірний ввід")
 else:
