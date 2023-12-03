@@ -118,6 +118,7 @@ if number_to_convert is not None:
             st.code(code)
             if "number" not in st.session_state:
                 st.session_state['number'] = number_to_convert
+            st.write(st.session_state)
         else:
             st.error("Невірний ввід")
 else:
